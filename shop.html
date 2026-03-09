@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Amal Furniture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            dark: '#1A1A1A',
+                            light: '#F5F5F7',
+                            accent: '#C4A484'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-light text-gray-800 font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight text-brand-dark">AMAL<span
+                    class="text-brand-gold">.</span></a>
+
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="text-gray-600 hover:text-brand-gold font-medium transition-colors">Home</a>
+                <a href="shop.html"
+                    class="text-brand-dark hover:text-brand-gold font-medium transition-colors border-b-2 border-brand-gold">Shop</a>
+                <a href="about.html" class="text-gray-600 hover:text-brand-gold font-medium transition-colors">About
+                    Us</a>
+                <a href="contact.html"
+                    class="text-gray-600 hover:text-brand-gold font-medium transition-colors">Contact</a>
+            </div>
+
+            <div class="flex items-center space-x-5">
+                <button class="text-gray-600 hover:text-brand-gold transition-colors"><i
+                        class="fas fa-search text-lg"></i></button>
+                <button class="text-gray-600 hover:text-brand-gold transition-colors relative">
+                    <i class="fas fa-shopping-bag text-lg"></i>
+                    <span
+                        class="absolute -top-1 -right-1 bg-brand-gold text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">0</span>
+                </button>
+                <button class="md:hidden text-gray-600 text-xl"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-brand-dark text-white pt-32 pb-20 px-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Collection</h1>
+            <p class="text-gray-400 max-w-2xl mx-auto">Explore our carefully curated selection of premium furniture,
+                designed to bring comfort and style to every corner of your home.</p>
+        </div>
+    </header>
+
+    <!-- Filters & Sort -->
+    <section class="py-8 border-b border-gray-200 bg-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex space-x-4 mb-4 md:mb-0 overflow-x-auto w-full md:w-auto pb-2 md:pb-0">
+                <button
+                    class="px-4 py-2 rounded-full bg-brand-dark text-white text-sm font-medium whitespace-nowrap">All</button>
+                <button
+                    class="px-4 py-2 rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200 text-sm font-medium whitespace-nowrap">Living
+                    Room</button>
+                <button
+                    class="px-4 py-2 rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200 text-sm font-medium whitespace-nowrap">Bedroom</button>
+                <button
+                    class="px-4 py-2 rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200 text-sm font-medium whitespace-nowrap">Dining</button>
+                <button
+                    class="px-4 py-2 rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200 text-sm font-medium whitespace-nowrap">Office</button>
+            </div>
+
+            <div class="flex items-center space-x-2">
+                <span class="text-gray-500 text-sm">Sort by:</span>
+                <select class="bg-transparent border-none font-medium text-brand-dark focus:ring-0 cursor-pointer">
+                    <option>Featured</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Newest</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="py-16 px-6 container mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Product 1 -->
+            <div
+                class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                <div class="relative h-72 bg-gray-100 overflow-hidden">
+                    <img src="./modern_dining_table.webp" alt="Dining Table"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <button
+                        class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-md text-gray-400 hover:text-red-500 transition-colors">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-brand-dark mb-1">Oak Dining Table</h3>
+                    <p class="text-sm text-gray-500 mb-3">Dining Room</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-brand-dark">$899.00</span>
+                        <button class="bg-brand-dark text-white p-2 rounded-lg hover:bg-brand-gold transition-colors">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div
+                class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                <div class="relative h-72 bg-gray-100 overflow-hidden">
+                    <img src="./cozy_bedroom_furniture.webp" alt="Platform Bed"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <button
+                        class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-md text-gray-400 hover:text-red-500 transition-colors">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <div class="absolute top-4 left-4 bg-brand-gold text-white text-xs font-bold px-2 py-1 rounded">NEW
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-brand-dark mb-1">Modern Platform Bed</h3>
+                    <p class="text-sm text-gray-500 mb-3">Bedroom</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-brand-dark">$1,250.00</span>
+                        <button class="bg-brand-dark text-white p-2 rounded-lg hover:bg-brand-gold transition-colors">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div
+                class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                <div class="relative h-72 bg-gray-100 overflow-hidden">
+                    <img src="./hero_living_room.webp" alt="Lounge Chair"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <button
+                        class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-md text-gray-400 hover:text-red-500 transition-colors">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-brand-dark mb-1">Velvet Lounge Chair</h3>
+                    <p class="text-sm text-gray-500 mb-3">Living Room</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-brand-dark">$450.00</span>
+                        <button class="bg-brand-dark text-white p-2 rounded-lg hover:bg-brand-gold transition-colors">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div
+                class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                <div class="relative h-72 bg-gray-100 overflow-hidden">
+                    <img src="./modern_dining_table.webp" alt="Side Table"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <button
+                        class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-md text-gray-400 hover:text-red-500 transition-colors">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <div class="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">SALE
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-brand-dark mb-1">Marble Side Table</h3>
+                    <p class="text-sm text-gray-500 mb-3">Accessories</p>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <span class="text-xl font-bold text-brand-dark">$199.00</span>
+                            <span class="text-sm text-gray-400 line-through ml-2">$299.00</span>
+                        </div>
+                        <button class="bg-brand-dark text-white p-2 rounded-lg hover:bg-brand-gold transition-colors">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div
+                class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                <div class="relative h-72 bg-gray-100 overflow-hidden">
+                    <img src="./cozy_bedroom_furniture.webp" alt="Sofa"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <button
+                        class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-md text-gray-400 hover:text-red-500 transition-colors">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-brand-dark mb-1">Leather 3-Seater Sofa</h3>
+                    <p class="text-sm text-gray-500 mb-3">Living Room</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-brand-dark">$2,150.00</span>
+                        <button class="bg-brand-dark text-white p-2 rounded-lg hover:bg-brand-gold transition-colors">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div
+                class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                <div class="relative h-72 bg-gray-100 overflow-hidden">
+                    <img src="./hero_living_room.webp" alt="Lamp"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <button
+                        class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-md text-gray-400 hover:text-red-500 transition-colors">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-brand-dark mb-1">Minimalist Floor Lamp</h3>
+                    <p class="text-sm text-gray-500 mb-3">Lighting</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-brand-dark">$129.00</span>
+                        <button class="bg-brand-dark text-white p-2 rounded-lg hover:bg-brand-gold transition-colors">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="mt-16 flex justify-center">
+            <nav class="flex items-center space-x-2">
+                <button
+                    class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-500 hover:bg-brand-dark hover:text-white transition-colors"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-brand-dark text-white font-bold">1</button>
+                <button
+                    class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-500 hover:bg-brand-dark hover:text-white transition-colors">2</button>
+                <button
+                    class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-500 hover:bg-brand-dark hover:text-white transition-colors">3</button>
+                <span class="text-gray-400">...</span>
+                <button
+                    class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-500 hover:bg-brand-dark hover:text-white transition-colors"><i
+                        class="fas fa-chevron-right"></i></button>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">AMAL<span class="text-brand-gold">.</span></h3>
+                    <p class="text-gray-400 mb-6">Crafting comfort and style for every home. Discover our exclusive
+                        collection of modern furniture designed for your lifestyle.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
+                                class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Shop</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Living Room</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Bedroom</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Dining</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Office</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">New Arrivals</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Support</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Q&A</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Shipping</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Returns</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Order Status</a></li>
+                        <li><a href="contact.html" class="hover:text-brand-gold transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-brand-gold"></i> 123
+                            Furniture Lane, Design District, NY 10001</li>
+                        <li class="flex items-center"><i class="fas fa-phone mr-3 text-brand-gold"></i> +1 (555)
+                            123-4567</li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-3 text-brand-gold"></i>
+                            hello@amalfurniture.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2026 Amal Furniture. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

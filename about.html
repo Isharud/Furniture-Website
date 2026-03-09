@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Amal Furniture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            dark: '#1A1A1A',
+                            light: '#F5F5F7',
+                            accent: '#C4A484'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-light text-gray-800 font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight text-brand-dark">AMAL<span
+                    class="text-brand-gold">.</span></a>
+
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="text-gray-600 hover:text-brand-gold font-medium transition-colors">Home</a>
+                <a href="shop.html" class="text-gray-600 hover:text-brand-gold font-medium transition-colors">Shop</a>
+                <a href="about.html"
+                    class="text-brand-dark hover:text-brand-gold font-medium transition-colors border-b-2 border-brand-gold">About
+                    Us</a>
+                <a href="contact.html"
+                    class="text-gray-600 hover:text-brand-gold font-medium transition-colors">Contact</a>
+            </div>
+
+            <div class="flex items-center space-x-5">
+                <button class="text-gray-600 hover:text-brand-gold transition-colors"><i
+                        class="fas fa-search text-lg"></i></button>
+                <button class="text-gray-600 hover:text-brand-gold transition-colors relative">
+                    <i class="fas fa-shopping-bag text-lg"></i>
+                    <span
+                        class="absolute -top-1 -right-1 bg-brand-gold text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">0</span>
+                </button>
+                <button class="md:hidden text-gray-600 text-xl"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="relative bg-brand-dark text-white pt-40 pb-20 px-6 overflow-hidden">
+        <div class="absolute inset-0 opacity-20"
+            style="background-image: url('./hero_living_room.webp'); background-size: cover; background-position: center;">
+        </div>
+        <div class="container mx-auto text-center relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Story</h1>
+            <p class="text-gray-400 max-w-2xl mx-auto">From humble beginnings to your home. We are dedicated to crafting
+                furniture that tells a story.</p>
+        </div>
+    </header>
+
+    <!-- Our Story Section -->
+    <section class="py-20 px-6">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2">
+                    <div class="relative">
+                        <img src="./cozy_bedroom_furniture.webp" alt="Craftsmanship"
+                            class="rounded-xl shadow-xl w-full">
+                        <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg hidden md:block">
+                            <p class="text-4xl font-bold text-brand-gold">25+</p>
+                            <p class="text-gray-600 font-medium">Years of Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl font-bold text-brand-dark mb-6">Crafting Excellence Since 2001</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Amal Furniture was founded with a simple mission: to create beautiful, high-quality furniture
+                        that brings people together. What started as a small workshop has grown into a beloved brand,
+                        known for our attention to detail and commitment to sustainable practices.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        We believe that your home should be a reflection of who you are. That's why we work with skilled
+                        artisans to design pieces that are not only functional but also works of art. Every curve, every
+                        stitch, and every finish is carefully considered to ensure it meets our exacting standards.
+                    </p>
+                    <div class="flex gap-4">
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold text-brand-dark">15k+</h3>
+                            <p class="text-sm text-gray-500">Happy Customers</p>
+                        </div>
+                        <div class="w-px bg-gray-300"></div>
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold text-brand-dark">50+</h3>
+                            <p class="text-sm text-gray-500">Design Awards</p>
+                        </div>
+                        <div class="w-px bg-gray-300"></div>
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold text-brand-dark">100%</h3>
+                            <p class="text-sm text-gray-500">Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="bg-white py-20 px-6">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-brand-dark mb-4">Our Core Values</h2>
+                <div class="w-20 h-1 bg-brand-gold mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-brand-light p-8 rounded-xl text-center hover:shadow-lg transition-shadow duration-300">
+                    <div
+                        class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 text-brand-gold text-2xl shadow-sm">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Sustainability</h3>
+                    <p class="text-gray-600">We source our materials responsibly and strive to minimize our
+                        environmental impact in every step of production.</p>
+                </div>
+
+                <div class="bg-brand-light p-8 rounded-xl text-center hover:shadow-lg transition-shadow duration-300">
+                    <div
+                        class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 text-brand-gold text-2xl shadow-sm">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Quality First</h3>
+                    <p class="text-gray-600">We never compromise on quality. Our furniture is built to last for
+                        generations, using only the finest materials.</p>
+                </div>
+
+                <div class="bg-brand-light p-8 rounded-xl text-center hover:shadow-lg transition-shadow duration-300">
+                    <div
+                        class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 text-brand-gold text-2xl shadow-sm">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Customer Love</h3>
+                    <p class="text-gray-600">Your satisfaction is our top priority. We go above and beyond to ensure you
+                        love your new furniture.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 px-6">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-brand-dark mb-4">Meet The Team</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">The passionate people behind Amal Furniture.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="text-center group">
+                    <div class="relative overflow-hidden rounded-xl mb-4 h-80">
+                        <img src="./modern_dining_table.webp" alt="CEO"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 grayscale hover:grayscale-0">
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark">Sarah Jenkins</h3>
+                    <p class="text-brand-gold font-medium">CEO & Founder</p>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="text-center group">
+                    <div class="relative overflow-hidden rounded-xl mb-4 h-80">
+                        <img src="./hero_living_room.webp" alt="Lead Designer"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 grayscale hover:grayscale-0">
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark">Michael Chen</h3>
+                    <p class="text-brand-gold font-medium">Lead Designer</p>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="text-center group">
+                    <div class="relative overflow-hidden rounded-xl mb-4 h-80">
+                        <img src="./modern_dining_table.webp" alt="Head of Crafts"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 grayscale hover:grayscale-0">
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark">Robert Fox</h3>
+                    <p class="text-brand-gold font-medium">Head of Crafts</p>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="text-center group">
+                    <div class="relative overflow-hidden rounded-xl mb-4 h-80">
+                        <img src="./cozy_bedroom_furniture.webp" alt="Marketing Director"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 grayscale hover:grayscale-0">
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark">Emily Rose</h3>
+                    <p class="text-brand-gold font-medium">Marketing Director</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">AMAL<span class="text-brand-gold">.</span></h3>
+                    <p class="text-gray-400 mb-6">Crafting comfort and style for every home. Discover our exclusive
+                        collection of modern furniture designed for your lifestyle.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
+                                class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Shop</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Living Room</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Bedroom</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Dining</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Office</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">New Arrivals</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Support</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Q&A</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Shipping</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Returns</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Order Status</a></li>
+                        <li><a href="contact.html" class="hover:text-brand-gold transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-brand-gold"></i> 123
+                            Furniture Lane, Design District, NY 10001</li>
+                        <li class="flex items-center"><i class="fas fa-phone mr-3 text-brand-gold"></i> +1 (555)
+                            123-4567</li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-3 text-brand-gold"></i>
+                            hello@amalfurniture.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2026 Amal Furniture. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
